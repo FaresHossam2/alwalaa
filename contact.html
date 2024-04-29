@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <link rel="shortcut icon" href="img/logo.png" type="x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/fa.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- JS & JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul>
+                <i id="close" class="fa-solid fa-xmark"></i>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="work.html">مشاريعنا </a></li>
+                <li><a href="#blog">المدونة</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="about.html">معلومات عنا</a></li>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+        
+            </ul>
+            
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    
+     <!-- start contact -->
+     <div class="contact-us" id="contact">
+        <div class="container">
+          <div class="contact-tittle">
+            <h4>get in touch</h4>
+            <h1>contact us</h1>
+          </div>
+          <div class="content-contact">
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="844a68dd-3fa3-4cea-abba-b15bff29516b">
+              <input class="main-input" type="text" name="name" id="name" placeholder="Your Name">
+              <div id="nameAlert" class="alert alert-danger d-none" role="alert"></div>
+              <input class="main-input" type="email" name="mail" id="email" placeholder="Your Email">
+              <div id="emailAlert" class="alert alert-danger d-none" role="alert"></div>
+              <textarea class="main-input" name="message" id="message" placeholder="Your Message"></textarea>
+              <div id="messageAlert" class="alert alert-danger d-none" role="alert"></div>
+              <input type="submit" value="Send Message" onclick="validateForm(event)">
+            </form>
+            <div class="img">
+              <img src="img/con.png" alt="">
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    
+  <!-- End contact -->
+
+
+
+
+
+
+    <!--start footer-->
+    <footer>
+      <div class="address">
+        <h1 style="text-align: right;">تواصل معنا </h1>
+        <h4> مدينه نصر <i class="fa-solid fa-location-dot"></i></h4>
+        <h4> 02 22752000 <i class="fa-solid fa-phone"></i></h4>
+        <a href="mailto:mailto:Info@alwalaacon.com?subject=Contact" class="link">Info@alwalaacon.com <i class="fa-solid fa-envelope"></i></a>  
+      </div>
+
+
+        <div class="hourss">
+            <h1 style="text-align: right;">ساعات العمل</h1>
+
+            <div class="dayy">
+                <h3>Monday - Tuesday</h3>
+                <h2>9:00 - 5:00</h2>
+            </div>
+            <div class="dayy">
+                <h3>Saturday - Sundayy</h3>
+                <h2>9:00 - 5:00</h2>
+            </div>
+            <div class="dayy">
+                <h3>Monday - Thursday</h3>
+                <h2>9:00 - 5:00</h2>
+            </div>
+        </div>
+        <div class="abbout">
+            <h1 style="text-align: right;">من نحن </h1>
+            <p style="text-align: right;">الولاء للمقاولات العامة المتكاملة و شراء الاراضى بغرض تقسيمها 
+                و اعادة بيعها وشراء الاراضى لبناء الوحدات السكنية عليها و بيعها و تخطيط المدن السياحية ومشروعات الامتداد العمرانى و التنمية العقارية و التوريدات العمومية</p>
+
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100064139410740"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:mailto:Info@alwalaacon.com?subject=Contact" class="link"><i class="fa-brands fa-google-plus-g"></i></a>  
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+                
+            </div>
+        </div>
+
+    </footer>
+    <div class="copy">
+        <div class="container">
+            <h1> Powered by Fares Hossam | جميع الحقوق محفوظه ©  2024 لشركه الولاء للمقاولات </h1>
+        </div>
+    </div>
+    <!--end footer-->
+
+</body>
+
+</html>
