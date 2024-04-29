@@ -296,7 +296,6 @@ nav ul li a:hover {
 
 .contact-btn{
     width: 150px;
-    height: auto;
     background: linear-gradient(120.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     color: white;
     font-weight: bold;
@@ -305,10 +304,11 @@ nav ul li a:hover {
     border: none;
     border-radius: 10px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-right: 0px;
     transition: 0.3s;
     margin-bottom: 50px;
+    position: relative;
 }
 .contact:hover{
     transform: scale(1.1);
@@ -398,6 +398,8 @@ nav ul li a:hover {
     text-transform: uppercase;
     margin-top: 20px;
     text-align: center;
+    position: relative;
+
 }
 
 /* End services */
@@ -783,6 +785,7 @@ padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
    }
   .projects .view{
     width: 180px;
