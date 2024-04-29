@@ -309,6 +309,7 @@ nav ul li a:hover {
     transition: 0.3s;
     margin-bottom: 50px;
     position: relative;
+    z-index: 1;
 }
 .contact:hover{
     transform: scale(1.1);
@@ -399,6 +400,7 @@ nav ul li a:hover {
     margin-top: 20px;
     text-align: center;
     position: relative;
+    z-index: 1;
 
 }
 
@@ -623,17 +625,7 @@ nav ul li a:hover {
     text-align: right;
 
 } 
-@media (max-width:768px){
-    .video{
-        padding: 50px !important;
-        width:40 !important;
-         height :260 !important;
-    }
-}
-.video{
-    width:640;
-     height :360;
-}
+
 .line{
     display: flex;
     justify-content: center;
@@ -694,7 +686,7 @@ button {
 }
 @media (max-width:768px){
     .prev {
-        left: 35px;
+        left: 10px;
     }
     
     .next {
