@@ -70,7 +70,6 @@ document.getElementById("message").addEventListener("input", function() {
 
 }
 
-
 function showSlide(sliderId) {
   const slides = document.querySelectorAll(`#${sliderId} .slide`);
   slides.forEach((slide, index) => {
@@ -84,7 +83,9 @@ function showSlide(sliderId) {
 
 const slideIndex = {
   slider1: 0,
-  slider2: 0
+  slider2: 0,
+  slider3: 0,
+  slider4: 0
 };
 
 function nextSlide(sliderId) {
@@ -107,4 +108,23 @@ function prevSlide(sliderId) {
 
 showSlide('slider1');
 showSlide('slider2');
+showSlide('slider3');
+showSlide('slider4');
+
+//logos slide
+function stopAnimation() {
+  var sliders = document.querySelectorAll('.slider-container .slider');
+  sliders.forEach(function(slider) {
+    slider.addEventListener('mouseover', function() {
+      slider.style.animationPlayState = 'paused';
+    });
+
+    slider.addEventListener('mouseout', function() {
+      slider.style.animationPlayState = 'running';
+    });
+  });
+}
+
+// Call this function to stop the animation when the mouse is over the slider
+stopAnimation();
 
