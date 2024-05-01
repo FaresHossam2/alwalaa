@@ -1002,7 +1002,16 @@ padding-bottom: 15px;
   .slider-container  .slider {
         animation: slide-animation 100s linear infinite;
       }
-      
+      @media(max-width:992px) {
+        .slider-container  .slider {
+            animation: slide-animation 40s linear infinite;
+          }
+    }
+      @media(max-width:768px) {
+        .slider-container  .slider {
+            animation: slide-animation 30s linear infinite;
+          }
+    }
       @keyframes slide-animation {
         0% {
           transform: translateX(0);
